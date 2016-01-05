@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:background="@drawable/category_background">
+    <Button
+        android:id="@+id/right"
+        android:layout_width="32dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/category_array_right" />
+    <HorizontalScrollView
+        android:id="@+id/category_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dip"
+        android:layout_toLeftOf="@id/right"
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/category_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+</RelativeLayout>
